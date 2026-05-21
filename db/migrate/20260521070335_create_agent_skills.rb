@@ -5,6 +5,6 @@ class CreateAgentSkills < ActiveRecord::Migration[8.1]
       t.references :skill, null: false, foreign_key: true
       t.timestamps
     end
-    add_index :agent_skills, [:agent_id, :skill_id], unique: true   # ← добавить
+    add_index :agent_skills, [:agent_id, :skill_id], unique: true
   end
 end

@@ -5,7 +5,7 @@ class Mission < ApplicationRecord
   validates :status, presence: true
 
   def status=(value)
-    allowed = %w[pending in_progress completed failed assigned]   
+    allowed = %w[pending in_progress completed failed assigned]
     if value.present? && !value.in?(allowed)
       raise ArgumentError, "Invalid status: #{value}"
     end

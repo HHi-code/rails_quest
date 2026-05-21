@@ -5,6 +5,6 @@ class CreateSkills < ActiveRecord::Migration[8.1]
       t.string :category
       t.timestamps
     end
-    add_index :skills, :name, unique: true   # ← добавить
+    add_index :skills, :name, unique: true
   end
 end

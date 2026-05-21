@@ -6,6 +6,6 @@ class CreateAgents < ActiveRecord::Migration[8.1]
       t.boolean :active, null: false, default: true
       t.timestamps
     end
-    add_index :agents, :codename, unique: true   # ← добавить эту строку
+    add_index :agents, :codename, unique: true
   end
 end
